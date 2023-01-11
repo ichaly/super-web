@@ -3,7 +3,9 @@
     <div class="notification">
       姓名：{{ userInfo.userName }}
       性别：{{ userInfo.sex }}
-      <el-button type="primary">Default</el-button>
+      <el-button type="primary" class="ml-4">
+        退出
+      </el-button>
     </div>
     <NuxtWelcome/>
   </div>
@@ -18,6 +20,6 @@ const userInfo = useUserStore().userInfo
 
 <style scoped lang="scss">
 .notification {
-  @apply text-white text-center bg-emerald-400 py-1 fixed w-full;
+  @apply text-white bg-emerald-400 py-1 fixed w-full flex items-center justify-center;
 }
 </style>
