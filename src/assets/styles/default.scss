@@ -1,1 +1,4 @@
-$theme: red;
+$theme: green;
+@use "element";
+// 导入scss基础变量文件，这里是核心，通过该导入解决scss变量没有导入的问题
+//@use "element-plus/theme-chalk/src/base.scss" as *;
