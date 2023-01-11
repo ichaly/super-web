@@ -8,7 +8,7 @@ module.exports = {
     './src/app.vue'
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

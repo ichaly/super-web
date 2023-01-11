@@ -3,20 +3,18 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineNuxtConfig({
   srcDir: 'src/',
-  css: ["@/assets/styles/tailwind.css"],
+  css: ['@/assets/styles/tailwind.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
+      autoprefixer: {}
+    }
   },
   build: {
-    transpile: ['element-plus/es'],
+    transpile: ['element-plus/es']
   },
   vite: {
-    plugins: [
-      ElementPlus({useSource: true}),
-    ],
+    plugins: [ElementPlus({ useSource: true })],
     css: {
       preprocessorOptions: {
         scss: {
@@ -25,8 +23,5 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: [
-    '@pinia/nuxt',
-    '@vueuse/nuxt',
-  ]
+  modules: ['@pinia/nuxt', '@vueuse/nuxt']
 })
