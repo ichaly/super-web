@@ -8,12 +8,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.ts,.vue --ignore-path .gitignore .",
-    "prepare": "husky install",
-    "commitlint": {
-      "extends": [
-        "@commitlint/config-conventional"
-      ]
-    }
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
