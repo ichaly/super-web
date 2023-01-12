@@ -4,12 +4,6 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineNuxtConfig({
   srcDir: 'src/',
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
-    }
-  },
   build: {
     transpile: ['element-plus/es']
   },
@@ -23,5 +17,5 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@pinia/nuxt', '@vueuse/nuxt', '@nuxtjs/tailwindcss']
+  modules: ['@pinia/nuxt', '@vueuse/nuxt', 'nuxt-windicss']
 })
