@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="notification">
-      姓名：{{ userInfo.userName }} 性别：{{ userInfo.sex }}
-      <el-button type="primary" class="ml-8">退出</el-button>
+      Name：{{ userInfo.userName }} Gender：{{ userInfo.gender }}
+      <el-button type="primary" class="ml-4">Exit</el-button>
     </div>
     <NuxtWelcome />
   </div>
@@ -17,6 +17,6 @@ const userInfo = useUserStore().userInfo
 
 <style scoped lang="scss">
 .notification {
-  @apply fixed flex w-full  items-center justify-center bg-emerald-400 py-1 text-white;
+  @apply z-9999 fixed  flex w-full items-center justify-center bg-emerald-400 py-1 text-white;
 }
 </style>
