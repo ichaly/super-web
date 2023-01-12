@@ -1,4 +1,11 @@
-$theme: green;
-@use "element";
-// 导入scss基础变量文件，这里是核心，通过该导入解决scss变量没有导入的问题
-//@use "element-plus/theme-chalk/src/base.scss" as *;
+/* 只需要重写你需要的即可 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': green,
+    ),
+  ),
+  $border-radius:(
+    'base': 3px,
+  )
+);

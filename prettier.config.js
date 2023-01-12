@@ -5,5 +5,6 @@ module.exports = {
   endOfLine: 'lf',
   tabWidth: 2, //tab键缩进为2空格
   trailingComma: 'none', //无尾逗号
+  arrowParens: 'avoid',
   plugins: [require('prettier-plugin-tailwindcss')]
 }
